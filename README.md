@@ -6,5 +6,5 @@ Repository für den Projektauftrag WS1 - ownCloud mit dem Service-Design fuer We
 
 ## Inhaltsverzeichnis
 
-* [Service-Design fuer Werkstattauftrag](https://www.lpi.org/our-certifications/exam-701-objectives)
+* [Service-Design fuer Werkstattauftrag](/Service-Design%20fuer%20Werkstattauftrag.md)
 * [Arbeitsauftrag fuer Werkstattaufgabe](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md)
