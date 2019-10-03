@@ -8,3 +8,5 @@ Repository für den Projektauftrag WS1 - ownCloud mit dem Service-Design fuer We
 
 * [Service-Design fuer Werkstattauftrag](/Service-Design%20fuer%20Werkstattauftrag.md)
 * [Arbeitsauftrag fuer Werkstattaufgabe](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md)
+
+***
