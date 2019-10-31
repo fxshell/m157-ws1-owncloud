@@ -55,8 +55,125 @@ ownCloud ist eine Software für das Speichern von Daten (Filehosting) auf einem 
 # Installationsanleitung
 
 ## Service User erstellen
-Mit dem foldenden Befel einen neuen User erstellen.
+1. Mit dem foldenden Befel einen neuen User erstellen.<br>
 ```sudo adduser owncloud```
+2. Den zuvor erstellen User zu de sudoers hinzufügen.<br>
+```usermod -aG sudo owncloud```
+3. Mit dem owncloud User einloggen.<br>
+```su owncloud```
+4. Ins Home Vezeichnis des owncloud Users wechseln.<br>
+```cd /home/owncloud/```
+
+## PHP Extensions, Tools, Apache2 & MySQL installieren
+1. Den folgenden Befehl ausführen und die Installation der PHP Extensions bestätigen.<br>
+```sudo apt-get install -y vim wget mysql-server apache2 php-intl php-mbstring php-gd php-curl php-mysql php-zip php-dom php-xmlwriter php-simplexml```
+
+## ownCloud vorbereiten
+1. Mit dem folgenden Befehl ownCloud herunterladen.<br>
+```wget https://download.owncloud.org/community/owncloud-10.3.0.tar.bz2```
+2. Das heruntergeladene Archiv entpacken.<br>
+```tar -xjf owncloud-10.3.0.tar.bz2```
+3. Das entpackte Verzeichnis ins Webroot kopieren.<br>
+```sudo cp -r /home/owncloud/owncloud /var/www/html/```
+
+## Apache konfigurieren
+1. Eine neue Konfigurationsdatei erstellen.<br>
+```vim /etc/apache2/sites-available/owncloud.conf```
+2. Die Konfiguration wie folg anpassen.<br>
+    ```Alias /owncloud "/var/www/owncloud/"
+    <Directory /var/www/owncloud/>
+        Options +FollowSymlinks
+        AllowOverride All
+	    <IfModule mod_dav.c>
+            Dav off
+        </IfModule>
+	    SetEnv HOME /var/www/owncloud
+        SetEnv HTTP_HOME /var/www/owncloud
+	</Directory>
+3. Symlink erstellen.<br>
+```ln -s /etc/apache2/sites-available/owncloud.cof /etc/apache2/sites-enabled/owncloud.comf```
+4. Den owner des owncloud Verzeichnisses ändern.<br>
+```sudo chown -R www-data /var/www/html/owncloud/```
+
+## MySQL konfigurieren
+1. Mit dem MySQL Server verbinden.<br>
+```sudo mysql -u root -p```
+2. Datenbank erstellen.<br>
+```CREATE DATABASE owncloud;```
+3. Datenbank User erstellen.<br>
+```CREATE USER 'ownlcoud'@'localhost' IDENTIFIED BY 'jedeliebtTBZ';```
+4. Dem User die Rechte für die owncloud Datenbank zuteilen.<br>
+```GRANT ALL PRIVILEGES ON owncloud.* TO 'owncloud'@'localhost;```
+```FLUSH PRIVILEGES;```
+5. MySQL Verbindung trennen.<br>
+```exit;```
+
+## SSL-Zertifikat erstellen und signieren
+1. In ein Verteichnis wechseln, welches nur vom Root erreichbar ist.
+```sudo cd /root```
+2. Key generieren.<br>
+```sudo openssl genrsa -out server.key 4096```
+3. Zertifikat erstellen.
+```openssl req -new -key server.key -out server.csr```
+4. Zertifikat signieren.<br>
+```sudo openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt```
+5. Berechtigungen verteilen.<br>
+```sudo chmod 400 server.key```
+6. Virtual Hosts Datei anpassen.<br>
+```sudo nano /etc/apache2/sites-available/owncloud.conf```
+```<VirtualHost *:443>
+DocumentRoot /var/www
+ServerName NAME EURES SERVERS
+SSLEngine on
+SSLCertificateFile /root/server.crt
+SSLCertificateKeyFile /root/server.key
+</VirtualHost>
+```
+7. Virtal Hosts Datei anpassen.<br>
+```sudo nano 7etc/apache2/sites-available/default```
+```<VirtualHost *:443>
+DocumentRoot /var/www
+ServerName NAME EURES SERVERS
+SSLEngine on
+SSLCertificateFile /root/server.crt
+SSLCertificateKeyFile /root/server.key
+</VirtualHost>
+```
+8. Virtual Hosts Datei anpassen.<br>
+```sudo nano 7etc/apache2/sites-available/default-ssl```
+```<IfModule mod_ssl.c>
+<VirtualHost *:443>
+ServerAdmin webmaster@localhost
+
+DocumentRoot /var/www
+<IfModule mod_ssl.c>
+SSLEngine on
+SSLCertificateKeyFile /root/server.key
+SSLCertificateFile /root/server.crt
+SetEnvIf User-Agent ".MSIE." \
+nokeepalive ssl-unclean-shutdown \
+downgrade-1.0 force-response-1.0
+</IfModule>
+```
+9. Apache2 Ports config anpassen.<br>
+```sudo nano /etc/apache2/port.conf```
+```VirtualHost *:443
+Listen 443
+```
+10. SSL Konfiguration aktivieren.<br>
+```sudo a2enmod ssl```
+11. SSL Konfiguration testen.<br>
+```apache2ctl configtest```
+12. Apache2 neustarten.<br>
+```apache2ctl restart```
+
+## ownCloud konfigurieren
+
+
+
+
+
+
 
 
 ***
