@@ -28,6 +28,8 @@ Diese Markdown Dokumentation wurde von den Pionieren deiner Mudda graziös entwo
 | 31. Oktober 2019 | Kapitel Autoren, Versionierung des Dokumentes erstellt und fertiggestellt | 0.3 |
 | 31. Oktober 2019 | Kapitel Funktion des Services erstellt und fertiggestellt | 0.4 |
 | 31. Oktober 2019 | Kapitel Benoetigte Hard- und Software erstellt und fertiggestellt | 0.5 |
+| 31. Oktober 2019 | Kapitel Installationsanleitung erstellt und fertiggestellt | 0.6 |
+
 
 ***
 
@@ -50,7 +52,12 @@ ownCloud ist eine Software für das Speichern von Daten (Filehosting) auf einem 
 
 ***
 
-#Installationsanleitung
+# Installationsanleitung
+
+## Service User erstellen
+Mit dem foldenden Befel einen neuen User erstellen.
+```sudo adduser owncloud```
+
 
 ***
 
@@ -58,7 +65,7 @@ ownCloud ist eine Software für das Speichern von Daten (Filehosting) auf einem 
 
 ***
 
-#Uebergabe an des Betrieb
+#Uebergabe an den Betrieb
 
 ***
 
