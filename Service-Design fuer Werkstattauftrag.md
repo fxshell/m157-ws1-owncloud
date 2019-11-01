@@ -6,10 +6,10 @@ Markdown-Dokument für Service-Design fuer Werkstattauftrag.
 
 ## Inhaltsverzeichnis
 
-* [Autoren, Versionierung des Dokumentes](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#autoren-versionierung-des-dokumentes)
-* [Funktion des Services](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#funktion-des-services)
-* [Benoetigte Hard- und Software](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#benoetigte-hard--und-software)
-* [Installationsanleitung](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#installationsanleitung)
+* [Autoren, Versionierung des Dokumentes](/Service-Design%20fuer%20Werkstattauftrag.md#autoren-versionierung-des-dokumentes)
+* [Funktion des Services](/Service-Design%20fuer%20Werkstattauftrag.md#funktion-des-services)
+* [Benoetigte Hard- und Software](/Service-Design%20fuer%20Werkstattauftrag.md#benoetigte-hard--und-software)
+* [Installationsanleitung](/Service-Design%20fuer%20Werkstattauftrag.md#installationsanleitung)
 * [Testing](/)
 * [Uebergabe an den Betrieb](/)
 * [Quellen](/)

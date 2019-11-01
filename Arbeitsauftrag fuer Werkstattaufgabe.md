@@ -6,10 +6,10 @@ Markdown-Dokument für Arbeitauftrag fuer Werkstattauftrag.
 
 ## Inhaltsverzeichnis
 
-* [Autoren, Versionierung des Dokumentes](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#autoren-versionierung-des-dokumentes)
-* [Einfuerung](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#einfuerung)
-* [Materialliste](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#materialliste)
-* [Installationsanleitung](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#installationsanleitung)
+* [Autoren, Versionierung des Dokumentes](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#autoren-versionierung-des-dokumentes)
+* [Einfuerung](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#einfuerung)
+* [Materialliste](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#materialliste)
+* [Installationsanleitung](/Arbeitsauftrag%20fuer%20Werkstattaufgabe.md#installationsanleitung)
 * [Qualitaetskontrolle](/)
 * [Error-Handling](/)
 
