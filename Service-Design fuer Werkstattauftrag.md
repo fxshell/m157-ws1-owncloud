@@ -183,7 +183,7 @@ Listen 443
 1. Fail2Ban mit folgendem Befehl installieren.<br>
 ```sudo apt install fail2ban```
 
-## UFW Firewall konfigurieren
+## UFW Firewall installieren & konfigurieren
 1. Zuerst muss die UFW Firewall auf dem Raspberry Pi insalliert werden.<br>
 ```sudo apt install ufw```
 2. Falls die Firewall nicht automatisch gestartet wird, kann man das mit folgenden Befehl erledigen.<br>
