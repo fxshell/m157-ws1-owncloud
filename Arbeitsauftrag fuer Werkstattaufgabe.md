@@ -28,6 +28,7 @@ Diese Markdown Dokumentation wurde von Luca Widmer zusammen mit Till Wigger für
 | 31. Oktober 2019      | Kapitel Einfuerung erstellt und fertiggestellt     |   0.4 |
 | 31. Oktober 2019      | Kapitel Materialliste erstellt und fertiggestellt     |   0.5 |
 | 01. November 2019 | Kapitel Installationsanleitung erstellt und fertiggestellt | 0.6 |
+| 01. November 2019 | Kapitel Installationsanleitung angepasst | 0.6.1 |
 
 
 ***
@@ -174,7 +175,7 @@ Listen 443
 ## Fail2Ban installieren
 1. Um Fail2Ban richtig zu installieren und zu konfigurieren benötigt man im Normalfall meherere Jahre erfahrung. Allerdings sollte auch ein Lernender im 3. Lehrjahr dieses Skill beherrschen. Desswegen muss Fail2Ban ohne Hilfe von dieser Installationsanleitung selber installiert und konfiguriert werden.<br>
 
-## UFW Firewall installieren konfigurieren
+## UFW Firewall installieren & konfigurieren
 1. Zuerst muss die UFW Firewall auf dem Raspberry Pi insalliert werden.<br>
 2. Es ist gut möglich, dass die Firewall nach der Installation icht automatisch startet. Desswegen muss, bevor irgenwelche konfiguration vorgenommen werden können, der Status der Firewall überprüft und falls es notwenig ist auch manuell gestartet werden.<br>
 3. Alle Ports nach innen deaktivieren. Achtung! SSH funktioniert danach nicht mehr. Am besten wird der Befehl auf der Console ausgeführt und mit Schritt 4 SSH wieder erlaubt.<br>
