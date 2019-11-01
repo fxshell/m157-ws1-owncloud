@@ -179,13 +179,9 @@ Listen 443
 7. Die zuvor erstellt Datenbank "owncloud" und als Hosts "localhost" angeben.
 8. Die konfiguration mit einem klick auf "Installation abschliessen" bestätigen.
 
-***
-
 ## Fail2Ban installieren
 1. Fail2Ban mit folgendem Befehl installieren.<br>
 ```sudo apt install fail2ban```
-
-***
 
 ## UFW Firewall konfigurieren
 1. Zuerst muss die UFW Firewall auf dem Raspberry Pi insalliert werden.<br>
