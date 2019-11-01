@@ -190,7 +190,7 @@ Listen 443
 ```sudo ufw enable```
 3. Alle Ports nach innen deaktivieren. Achtung! SSH funktioniert danach nicht mehr. Am besten wird der Befehl auf der Console ausgeführt und mit Schritt 4 SSH wieder erlaubt.<br>
 ```sudo ufw deafult deny incomming```
-4. SSH nach innen erlauben.<br>
+4. SSH incoming erlauben.<br>
 ```sudo ufw allow 22```
 5. HTTPS incoming erlauben.<br>
 ```sudo ufw allow 443```
