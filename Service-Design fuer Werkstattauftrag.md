@@ -29,6 +29,7 @@ Diese Markdown Dokumentation wurde von den Pionieren deiner Mudda graziös entwo
 | 31. Oktober 2019 | Kapitel Funktion des Services erstellt und fertiggestellt | 0.4 |
 | 31. Oktober 2019 | Kapitel Benoetigte Hard- und Software erstellt und fertiggestellt | 0.5 |
 | 31. Oktober 2019 | Kapitel Installationsanleitung erstellt und fertiggestellt | 0.6 |
+| 01. November 2019 | Kapitel Installationsanleitung angepasst | 0.6.1 |
 
 
 ***
@@ -169,12 +170,22 @@ Listen 443
 
 ## ownCloud konfigurieren
 
+1. ownCloud Installation im Webbrowser unter https://hostname_or_ip/owncloud aufrufen.
+2. Die SSL Meldung, welche erscheint, weil ein Selbstsigniertes SSL Zertifikat verwendet wurde, bestätigen und fortfahren.
+3. Danach muss man den Admin User für die ownCloud installation definieren.
+4. Um die Datenbank zu konfigurieren muss man auf Fortgeschritten klicken.
+5. Den Eintrag "Datenverzeichnis" kann man so stehen lassen.
+6. MySQL auswählen un den zuvor erstellte Datenbankbenutzer "owncloud" mit dem dazugehörigen Passwort angeben.
+7. Die zuvor erstellt Datenbank "owncloud" und als Hosts "localhost" angeben.
+8. Die konfiguration mit einem klick auf "Installation abschliessen" bestätigen.
 
+***
 
+##Fail2Ban installieren
 
+***
 
-
-
+##Firewall konfigurieren
 
 ***
 
