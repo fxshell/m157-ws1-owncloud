@@ -6,10 +6,10 @@ Markdown-Dokument für Service-Design fuer Werkstattauftrag.
 
 ## Inhaltsverzeichnis
 
-* [Autoren, Versionierung des Dokumentes](/)
-* [Funktion des Services](/)
-* [Benoetigte Hard- und Software](/)
-* [Installationsanleitung](/)
+* [Autoren, Versionierung des Dokumentes](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#autoren-versionierung-des-dokumentes)
+* [Funktion des Services](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#funktion-des-services)
+* [Benoetigte Hard- und Software](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#benoetigte-hard--und-software)
+* [Installationsanleitung](/https://github.com/chltrx/m157-ws1-owncloud/blob/master/Service-Design%20fuer%20Werkstattauftrag.md#installationsanleitung)
 * [Testing](/)
 * [Uebergabe an den Betrieb](/)
 * [Quellen](/)
@@ -30,6 +30,7 @@ Diese Markdown Dokumentation wurde von Luca Widmer zusammen mit Till Wigger für
 | 31. Oktober 2019 | Kapitel Benoetigte Hard- und Software erstellt und fertiggestellt | 0.5 |
 | 31. Oktober 2019 | Kapitel Installationsanleitung erstellt und fertiggestellt | 0.6 |
 | 01. November 2019 | Kapitel Installationsanleitung angepasst | 0.6.1 |
+| 01. November 2019 | Inhaltsverzeichnis angepasst | 0.6.2 |
 
 
 ***
