@@ -181,11 +181,23 @@ Listen 443
 
 ***
 
-##Fail2Ban installieren
+## Fail2Ban installieren
+1. Fail2Ban mit folgendem Befehl installieren.<br>
+```sudo apt install fail2ban```
 
 ***
 
-##Firewall konfigurieren
+## UFW Firewall konfigurieren
+1. Zuerst muss die UFW Firewall auf dem Raspberry Pi insalliert werden.<br>
+```sudo apt install ufw```
+2. Falls die Firewall nicht automatisch gestartet wird, kann man das mit folgenden Befehl erledigen.<br>
+```sudo ufw enable```
+3. Alle Ports nach innen deaktivieren. Achtung! SSH funktioniert danach nicht mehr. Am besten wird der Befehl auf der Console ausgeführt und mit Schritt 4 SSH wieder erlaubt.<br>
+```sudo ufw deafult deny incomming```
+4. SSH nach innen erlauben.<br>
+```sudo ufw allow 22```
+5. HTTPS incoming erlauben.<br>
+```sudo ufw allow 443```
 
 ***
 
