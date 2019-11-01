@@ -18,7 +18,7 @@ Markdown-Dokument für Service-Design fuer Werkstattauftrag.
 
 # Autoren, Versionierung des Dokumentes
 ## Autoren
-Diese Markdown Dokumentation wurde von den Pionieren deiner Mudda graziös entworfen.
+Diese Markdown Dokumentation wurde von Luca Widmer zusammen mit Till Wigger für das Modul 157 an der TBZ entworfen.
 
 ## Versionierung des Dokumentes
 | Datum         | Beschreibung  | Versionierung  |
