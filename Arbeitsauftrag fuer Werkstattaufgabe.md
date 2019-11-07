@@ -30,6 +30,7 @@ Diese Markdown Dokumentation wurde von Luca Widmer zusammen mit Till Wigger für
 | 01. November 2019 | Kapitel Installationsanleitung erstellt und fertiggestellt | 0.6 |
 | 01. November 2019 | Kapitel Installationsanleitung angepasst | 0.6.1 |
 | 01. November 2019 | Inhaltsverzeichnis angepasst | 0.6.2 |
+| 07. Novemebr 2019 | Zusatzaufgabe erstellt | 0.7 |
 
 
 ***
