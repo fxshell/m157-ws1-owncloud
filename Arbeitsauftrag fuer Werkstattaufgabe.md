@@ -185,6 +185,17 @@ Listen 443
 ```sudo ufw allow 22```
 5. HTTPS incoming erlauben.<br>
 
+## Zusatzsaufgabe
+### Requirenments
+* CHF 15.-
+
+### Aufgabe
+1. Eine Domain registrieren.
+2. In den Domain DNS Einstellungen einen A Record auf die öffentliche IP Adresse der TBZ erstellen.
+3. Lets Encrypt auf dem Raspberry installieren.
+4. Gültiges SSL Zertifikat mit Lets Encrypt generieren.
+5. Testen, ob die ownCloud Webseite Zertifiziert ist.
+
 ***
 
 #Qualitaetskontrolle
